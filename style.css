@@ -16,7 +16,6 @@ Variables
   --seconday-clr: #191919;
   --secondary-lighter: #2c2b30;
   --transition: all 0.3s linear;
-  --spacing: 0.15rem;
   --radius: 0.5rem;
 }
 
@@ -105,7 +104,6 @@ Main
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 1rem 1rem;
-  letter-spacing: var(--spacing);
 }
 .movie-info h3 {
   margin-top: 0;
