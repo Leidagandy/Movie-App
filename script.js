@@ -9,6 +9,7 @@ const SEARCH =
 const form = document.getElementById("form");
 const search = document.getElementById("search");
 const main = document.getElementById("main");
+
 const imageNotAvailable =
   "https://sainfoinc.com/wp-content/uploads/2018/02/image-not-available.jpg";
 
@@ -43,9 +44,10 @@ function showMovies(movies) {
 </div>
 
 <div class="overview">
-  <h3>Overview</h3>
+  <h4>${title}</h4>
  ${overview ? overview : "No overview available"}
 </div>
+
 `;
     main.appendChild(movieNode);
   });
@@ -60,4 +62,8 @@ form.addEventListener("submit", (e) => {
   } else {
     window.location.reload();
   }
+});
+
+logo.addEventListener("click", () => {
+  return window.location.reload();
 });
